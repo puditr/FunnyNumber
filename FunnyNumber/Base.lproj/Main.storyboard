@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="LfT-8W-VtT">
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="LfT-8W-VtT">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-bH-exP">
@@ -53,19 +53,39 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="60" height="60"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfP-g9-nwG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Title" id="x03-Xx-6bp">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="TextArrow" id="8T3-sr-TOH">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="3OD-ah-uUD" kind="show" id="ZSL-JT-3uh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bvM-MZ-cDG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8y1-CT-0nR"/>
                             <constraint firstItem="Bfb-bH-exP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FG2-gL-KjQ"/>
                             <constraint firstItem="LfT-8W-VtT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HDb-g1-r3I"/>
+                            <constraint firstItem="sfP-g9-nwG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HdK-rd-R7r"/>
+                            <constraint firstItem="sfP-g9-nwG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JtA-Ss-V0m"/>
                             <constraint firstItem="LfT-8W-VtT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q8E-6v-aN5"/>
                             <constraint firstItem="LfT-8W-VtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RZc-v9-NwX"/>
                             <constraint firstItem="bvM-MZ-cDG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W4n-iS-EJ1"/>
                             <constraint firstItem="Bfb-bH-exP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZMd-4b-UWk"/>
                             <constraint firstItem="LfT-8W-VtT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c9s-qZ-56W"/>
+                            <constraint firstItem="sfP-g9-nwG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cMf-rm-C5O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvM-MZ-cDG" secondAttribute="trailing" constant="20" id="kPv-GI-dJf"/>
                             <constraint firstItem="Bfb-bH-exP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kWK-FJ-w3Z"/>
+                            <constraint firstItem="sfP-g9-nwG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lrE-Hm-4ua"/>
+                            <constraint firstItem="sfP-g9-nwG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qRA-7K-4oN"/>
+                            <constraint firstItem="sfP-g9-nwG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vlL-8F-Bi3"/>
                             <constraint firstItem="bvM-MZ-cDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yKZ-gn-4K0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -85,18 +105,76 @@
                     <view key="view" contentMode="scaleToFill" id="4yE-Wy-71i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper2" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-8y-OgF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOD-Bu-qPS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Title" id="Cfj-W8-0C0">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowBackiOS" id="hhZ-Pn-RS3">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="bFV-Ow-NNY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-pL-Bek">
+                                <rect key="frame" x="20" y="386.5" width="374" height="123.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="7" height="4"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8L-DF-oAA">
+                                <rect key="frame" x="0.0" y="809" width="414" height="53"/>
+                                <items>
+                                    <barButtonItem title="Item" image="ArrowBack" id="L7Q-ox-qz8"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BDE-Ix-u3h"/>
+                                    <barButtonItem title="Zero" id="ktD-Eu-V6V"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oxi-wi-1Bf"/>
+                                    <barButtonItem title="Item" image="ArrowNext" id="7lC-4s-raa"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f8L-DF-oAA" firstAttribute="bottom" secondItem="v73-ri-1jM" secondAttribute="bottom" id="5VH-uX-i8I"/>
+                            <constraint firstItem="v73-ri-1jM" firstAttribute="trailing" secondItem="tl6-pL-Bek" secondAttribute="trailing" constant="20" id="8cj-ie-8SW"/>
+                            <constraint firstItem="tl6-pL-Bek" firstAttribute="leading" secondItem="v73-ri-1jM" secondAttribute="leading" constant="20" id="H4q-0e-36O"/>
+                            <constraint firstItem="f8L-DF-oAA" firstAttribute="leading" secondItem="v73-ri-1jM" secondAttribute="leading" id="I1G-Ag-r4f"/>
+                            <constraint firstItem="DOD-Bu-qPS" firstAttribute="top" secondItem="v73-ri-1jM" secondAttribute="top" id="IGR-ot-1bl"/>
+                            <constraint firstItem="tl6-pL-Bek" firstAttribute="centerY" secondItem="4yE-Wy-71i" secondAttribute="centerY" id="NH4-kN-B95"/>
+                            <constraint firstItem="f8L-DF-oAA" firstAttribute="trailing" secondItem="v73-ri-1jM" secondAttribute="trailing" id="OmR-nc-5yW"/>
+                            <constraint firstItem="AZU-8y-OgF" firstAttribute="top" secondItem="v73-ri-1jM" secondAttribute="top" id="SKf-2Y-EBV"/>
+                            <constraint firstItem="AZU-8y-OgF" firstAttribute="bottom" secondItem="v73-ri-1jM" secondAttribute="bottom" id="WsQ-Tf-4UN"/>
+                            <constraint firstItem="DOD-Bu-qPS" firstAttribute="leading" secondItem="v73-ri-1jM" secondAttribute="leading" id="ZIx-9v-SfO"/>
+                            <constraint firstItem="AZU-8y-OgF" firstAttribute="trailing" secondItem="v73-ri-1jM" secondAttribute="trailing" id="boo-nB-ug7"/>
+                            <constraint firstItem="DOD-Bu-qPS" firstAttribute="trailing" secondItem="v73-ri-1jM" secondAttribute="trailing" id="gte-Fg-jIB"/>
+                            <constraint firstItem="AZU-8y-OgF" firstAttribute="leading" secondItem="v73-ri-1jM" secondAttribute="leading" id="m0A-YE-lw3"/>
+                            <constraint firstItem="tl6-pL-Bek" firstAttribute="centerX" secondItem="4yE-Wy-71i" secondAttribute="centerX" id="w2r-sg-Csp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v73-ri-1jM"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="2zu-HV-rW7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kq7-pP-mk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="21"/>
+            <point key="canvasLocation" x="876.81159420289862" y="20.758928571428569"/>
         </scene>
     </scenes>
     <resources>
         <image name="ArrowBack" width="48" height="48"/>
+        <image name="ArrowBackiOS" width="72" height="72"/>
         <image name="ArrowNext" width="48" height="48"/>
+        <image name="TextArrow" width="72" height="72"/>
         <image name="Wallpaper" width="2768" height="1848"/>
+        <image name="Wallpaper2" width="4000" height="2547"/>
     </resources>
 </document>
