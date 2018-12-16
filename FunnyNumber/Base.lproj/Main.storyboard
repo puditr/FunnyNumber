@@ -134,11 +134,23 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8L-DF-oAA">
                                 <rect key="frame" x="0.0" y="809" width="414" height="53"/>
                                 <items>
-                                    <barButtonItem title="Item" image="ArrowBack" id="L7Q-ox-qz8"/>
+                                    <barButtonItem title="Item" image="ArrowBack" id="L7Q-ox-qz8">
+                                        <connections>
+                                            <action selector="backButton:" destination="3OD-ah-uUD" id="7j4-ku-9MI"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BDE-Ix-u3h"/>
-                                    <barButtonItem title="Zero" id="ktD-Eu-V6V"/>
+                                    <barButtonItem title="Zero" id="ktD-Eu-V6V">
+                                        <connections>
+                                            <action selector="zeroButton:" destination="3OD-ah-uUD" id="gjm-zj-JRo"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="oxi-wi-1Bf"/>
-                                    <barButtonItem title="Item" image="ArrowNext" id="7lC-4s-raa"/>
+                                    <barButtonItem title="Item" image="ArrowNext" id="7lC-4s-raa">
+                                        <connections>
+                                            <action selector="nextButton:" destination="3OD-ah-uUD" id="Ubq-Py-SMy"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
@@ -163,6 +175,9 @@
                         <viewLayoutGuide key="safeArea" id="v73-ri-1jM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2zu-HV-rW7"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="tl6-pL-Bek" id="Zw2-N7-ygs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kq7-pP-mk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

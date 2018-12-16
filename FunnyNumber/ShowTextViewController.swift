@@ -9,6 +9,50 @@
 import UIKit
 
 class ShowTextViewController: UIViewController {
+    
+//    Explicit
+    var myClass = MyClass()
+    
+    
+    
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    
+    @IBAction func backButton(_ sender: Any) {
+        var currentNumber: Int = myClass.indexNumber
+        let textNumber = myClass.textNumber
+       
+        if currentNumber <= 0 {
+            currentNumber = textNumber.count - 1
+        } else {
+            currentNumber -= 1
+        }
+        
+        myClass.indexNumber = currentNumber
+        numberLabel.text = textNumber[currentNumber]
+
+    }
+    
+    
+    
+    @IBAction func zeroButton(_ sender: Any) {
+        
+        myClass.indexNumber = 0
+        var textNumber = myClass.textNumber
+        numberLabel.text = textNumber[myClass.indexNumber]
+        
+    }
+    
+    
+    
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
