@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunnyNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="LfT-8W-VtT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-bH-exP">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="wbk-bG-R9y"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-MZ-cDG">
+                                <rect key="frame" x="20" y="310.5" width="374" height="275"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="180"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="60" height="60"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bvM-MZ-cDG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8y1-CT-0nR"/>
+                            <constraint firstItem="Bfb-bH-exP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FG2-gL-KjQ"/>
+                            <constraint firstItem="LfT-8W-VtT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HDb-g1-r3I"/>
+                            <constraint firstItem="LfT-8W-VtT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q8E-6v-aN5"/>
+                            <constraint firstItem="LfT-8W-VtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RZc-v9-NwX"/>
+                            <constraint firstItem="bvM-MZ-cDG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W4n-iS-EJ1"/>
+                            <constraint firstItem="Bfb-bH-exP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZMd-4b-UWk"/>
+                            <constraint firstItem="LfT-8W-VtT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c9s-qZ-56W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvM-MZ-cDG" secondAttribute="trailing" constant="20" id="kPv-GI-dJf"/>
+                            <constraint firstItem="Bfb-bH-exP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kWK-FJ-w3Z"/>
+                            <constraint firstItem="bvM-MZ-cDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yKZ-gn-4K0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Wallpaper" width="2768" height="1848"/>
+    </resources>
+</document>
