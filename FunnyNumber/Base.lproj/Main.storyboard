@@ -24,10 +24,27 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-bH-exP">
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="wbk-bG-R9y"/>
+                                    <barButtonItem title="Item" image="ArrowBack" id="wbk-bG-R9y">
+                                        <connections>
+                                            <action selector="backButton:" destination="BYZ-38-t0r" id="XUS-Z1-pvF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FJP-aG-B3z"/>
+                                    <barButtonItem title="Zero" id="f4p-vm-w1T">
+                                        <connections>
+                                            <action selector="zeroButton:" destination="BYZ-38-t0r" id="vcI-tI-RRi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Htg-oO-RJJ"/>
+                                    <barButtonItem title="Item" image="ArrowNext" id="WH7-DD-oeM">
+                                        <connections>
+                                            <action selector="nextButton:" destination="BYZ-38-t0r" id="jqT-38-cvv"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-MZ-cDG">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-MZ-cDG">
                                 <rect key="frame" x="20" y="310.5" width="374" height="275"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="180"/>
@@ -53,6 +70,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="bvM-MZ-cDG" id="IF1-3M-jyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +80,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBack" width="48" height="48"/>
+        <image name="ArrowNext" width="48" height="48"/>
         <image name="Wallpaper" width="2768" height="1848"/>
     </resources>
 </document>
